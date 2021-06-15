@@ -91,19 +91,19 @@ main (){
 
     case $OPERATION in
     start)
-        operation "start" "$CLUSTER_ID"
+        operation "instance-start" "$CLUSTER_ID"
         ;;
     stop)
-        operation "stop" "$CLUSTER_ID"
+        operation "instance-stop" "$CLUSTER_ID"
         ;;
     hard-reboot)
-        operation "hard-reboot" "$CLUSTER_ID"
+        operation "instance-hard-reboot" "$CLUSTER_ID"
         ;;
     soft-reboot)
-        operation "soft-reboot" "$CLUSTER_ID"
+        operation "instance-soft-reboot" "$CLUSTER_ID"
         ;;
     immediate-shutdown)
-        operation "immediate-shutdown" "$CLUSTER_ID"
+        operation "instance-immediate-shutdown" "$CLUSTER_ID"
         ;;
     *)
         echo -n "ERROR: Option not available."
