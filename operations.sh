@@ -64,11 +64,6 @@ function operation(){
 
 main (){
 
-    API_KEY=$1
-    POWERVS_CRN=$2
-    CLUSTER_ID=$2
-    OPERATION=$1
-
     if [ -z "$API_KEY" ]; then
         echo "API_KEY was not set."
         exit 1
